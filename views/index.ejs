@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+	<title>Chat Application</title>
+</head>
+<body>
+	<h1><%= msg %></h1>
+
+	<h2 id="peer-id"></h2>
+	<label>Set your name: </label><input type="text" name="username" id="input-username">
+	<button id="setup-btn">setup</button><br>
+	<label>Connect to other's ID: </label><input type="text" name="peerId" id="input-other-peer-id">
+	<button id="connect-btn">connect</button>
+
+	<div>Connect with: <span id="buddy-name"></span></div>
+
+	<div id="app">
+		<div id="chat-room"></div>
+
+		<div id="message-control">
+			<textarea id="input-message"></textarea><br/>
+			<button id="send-msg-btn">send</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/main.js" defer></script>
+</body>
+</html>
